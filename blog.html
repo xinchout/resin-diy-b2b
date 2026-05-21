@@ -156,7 +156,7 @@ footer a:hover { color: #fff; }
 </header>
 
 <!-- ======== BLOG INDEX PAGE ======== -->
-<div id="blog-index" style="display:none;">
+<div id="blog-index">
   <section class="blog-hero">
     <div class="container">
       <h1>DIY Craft B2B Sourcing Blog</h1>
@@ -550,11 +550,13 @@ function showIndex() {
   window.scrollTo(0, 0);
 }
 
-// Check hash for direct post links
-if (window.location.hash === '#post1') showPost(1);
-else if (window.location.hash === '#post2') showPost(2);
-else if (window.location.hash === '#post3') showPost(3);
-else if (window.location.hash === '#post4') showPost(4);
+// Check hash for direct post links (must run after posts is defined)
+window.addEventListener('DOMContentLoaded', function() {
+  if (window.location.hash === '#post1') showPost(1);
+  else if (window.location.hash === '#post2') showPost(2);
+  else if (window.location.hash === '#post3') showPost(3);
+  else if (window.location.hash === '#post4') showPost(4);
+});
 </script>
 
 <footer>
