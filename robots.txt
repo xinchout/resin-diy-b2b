@@ -1,0 +1,20 @@
+# AI爬虫全放行 - AI Bot Full Access
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://xinchout.github.io/resin-diy-b2b/sitemap.xml
